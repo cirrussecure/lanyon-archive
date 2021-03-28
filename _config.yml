@@ -2,7 +2,7 @@
 safe: true
 # source: [cirrussecure.github.io]
 # incremental: false
-highlighter: rouge
+# highlighter: rouge
 gist:
   noscript: false
 kramdown:
