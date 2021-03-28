@@ -3,7 +3,7 @@ title:               CirrusSecure
 tagline:             'A site prototype in search of a purpose'
 description:         'Any suggestions?'
 url:                 https://cirrussecure.github.io/
-baseurl:             ''
+baseurl:             'proto1'
 paginate:            5
 permalink:           pretty
 
