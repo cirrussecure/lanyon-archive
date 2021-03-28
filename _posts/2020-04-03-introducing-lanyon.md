@@ -1,7 +1,9 @@
 ---
 layout: post
-title: Introducing Lanyon
+title: Introducing CirrusSeccure my new site based on Lanyon
 ---
+
+## [Head to Mark Otto's repo](https://github.com/poole/lanyon#readme) to learn more.
 
 Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
@@ -25,8 +27,6 @@ In addition to the features of Poole, Lanyon adds the following:
 * Two orientations for content and sidebar, default (left sidebar) and [reverse](https://github.com/poole/lanyon#reverse-layout) (right sidebar), available via `<body>` classes
 * [Eight optional color schemes](https://github.com/poole/lanyon#themes), available via `<body>` classes
 
-[Head to the readme](https://github.com/poole/lanyon#readme) to learn more.
-
 ### Browser support
 
 Lanyon is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.
@@ -35,4 +35,4 @@ Lanyon is by preference a forward-thinking project. In addition to the latest ve
 
 Lanyon is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/lanyon">GitHub repository</a> for downloads, bug reports, and features requests.
 
-Thanks!
+
