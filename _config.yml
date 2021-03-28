@@ -3,7 +3,7 @@ title:               CirrusSecure
 tagline:             'A site prototype in search of a purpose'
 description:         'Any suggestions?'
 url:                 https://cirrussecure.github.io/
-baseurl:             'proto1'
+# baseurl:             'proto1'
 paginate:            5
 permalink:           pretty
 
@@ -21,7 +21,7 @@ plugins:
 # Source for following; 
 # https://docs.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll#configuring-jekyll-in-your-github-pages-site
 
-# lsi: false
+lsi: false
 safe: true
 # source: [cirrussecure.github.io]
 incremental: false
