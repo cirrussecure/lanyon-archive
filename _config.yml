@@ -1,6 +1,6 @@
 # Setup
 title:               CirrusSecure
-tagline:             'I need one'
+tagline:             'A site prototype in search of a purpose'
 description:         'Any suggestions?'
 url:                 https://cirrussecure.github.io/
 baseurl:             ''
@@ -24,7 +24,7 @@ plugins:
 # lsi: false
 safe: true
 # source: [cirrussecure.github.io]
-# incremental: false
+incremental: false
 # highlighter: rouge
 gist:
   noscript: false
