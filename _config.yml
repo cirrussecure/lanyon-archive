@@ -1,7 +1,7 @@
-lsi: false
+# lsi: false
 safe: true
 # source: [cirrussecure.github.io]
-incremental: false
+# incremental: false
 highlighter: rouge
 gist:
   noscript: false
