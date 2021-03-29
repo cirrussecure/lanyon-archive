@@ -21,6 +21,7 @@ title: Home
 
     {% if paginator.page == 1 %}
       {{ post.content }}
+      <a href="{{ site.url }}">Next</a> 
       {% comment %}
         {% post.url | absolute_url | link_to %}
       {% endcomment %}
