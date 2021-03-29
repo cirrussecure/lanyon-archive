@@ -18,8 +18,8 @@ title: Home
       <a href="{{ post.url | absolute_url }}">post.url | absolute_url</a> -->
 
     {% if paginator.page == 1 %}
-      {% post.url | absolute_url | link_to %}
       {{ post.content }}
+      {% post.url | absolute_url | link_to %}
       {% break %}
     {% else %}
       {{ post.content }}    
