@@ -13,11 +13,12 @@ title: Home
         {{ post.title }}
 
         {{ post.url }}
-        {{ post.url | absolute_url }}
  
       </a>
     </h1>
     <span class="post-date">{{ post.date | date_to_string }}</span>
+  
+    {{ post.url | absolute_url }}
 
     {% if paginator.page == 1 %}
       {{ post.content }}
