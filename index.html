@@ -19,10 +19,8 @@ title: Home
       <a href="{{ post.url | absolute_url }}">post.url | absolute_url</a> 
     -->
 
-#    {% if paginator.page == 1 %}
+    {% if paginator.page == 1 %}
       {{ post.content }}
-      
-      {% if site.related_posts.size >= 1 %}
         <div>
         <h3>Related Posts</h3>
         <ul>
@@ -31,12 +29,6 @@ title: Home
           {% endfor %}
         </ul>
         </div>
-#     {% endif %}
-
-      {% comment %}
-        <a href="{{ site.url }}">Next</a> 
-        {% post.url | absolute_url | link_to %}
-      {% endcomment %}
     {% break %}
     {% else %}
       {{ post.content }}    
@@ -63,3 +55,20 @@ title: Home
   {% endif %}
 
 </div>
+
+{% comment %}      
+      {% if site.related_posts.size >= 1 %}
+        <div>
+        <h3>Related Posts</h3>
+        <ul>
+         {% for related_post in site.related_posts limit: 5 %}
+            <li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
+          {% endfor %}
+        </ul>
+        </div>
+     {% endif %}
+
+    <a href="{{ site.url }}">Next</a> 
+    {% post.url | absolute_url | link_to %}
+{% endcomment %}
+
