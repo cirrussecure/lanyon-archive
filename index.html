@@ -21,14 +21,7 @@ title: Home
 
     {% if paginator.page == 1 %}
       {{ post.content }}
-        <div>
-        <h3>Related Posts</h3>
-        <ul>
-         {% for related_post in site.related_posts %}
-            <li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
-          {% endfor %}
-        </ul>
-        </div>
+      <a href="{{ site.url }}">Next</a> 
     {% break %}
     {% else %}
       {{ post.content }}    
