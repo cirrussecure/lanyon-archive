@@ -24,7 +24,7 @@ title: Home
         <div>
         <h3>Related Posts</h3>
         <ul>
-         {% for related_post in site.related_posts limit: 5 %}
+         {% for related_post in site.related_posts %}
             <li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
           {% endfor %}
         </ul>
