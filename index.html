@@ -5,7 +5,15 @@ title: Home
 
 <div class="posts">
   {{ paginator.page }}
-  
+
+  {% if paginator.page == 1 %}
+    <div class="post">
+     {{ post.content }}
+     <div>{{ paginator.page }}</div>
+      <span class="pagination-item newer">Neeewwer</span>
+    <div>
+  {% else %}
+      
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
@@ -37,4 +45,6 @@ title: Home
     <span class="pagination-item newer">Newer</span>
   {% endif %}
   
+ {% endif %} <!-- if paginator.page == 1 -->
+
 </div>
