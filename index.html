@@ -12,7 +12,7 @@ title: Home
         {{ post.title }}
     </h1>
     <span class="post-date">{{ post.date | date_to_string }}</span>
-    
+      {{ post.title }}
       {% if post.title == "About me" %}
         {{ post.content }}
         {% break %}
