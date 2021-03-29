@@ -19,7 +19,7 @@ title: Home
       <a href="{{ post.url | absolute_url }}">post.url | absolute_url</a> 
     -->
 
-    {% if paginator.page == 1 %}
+//    {% if paginator.page == 1 %}
       {{ post.content }}
       
       {% if site.related_posts.size >= 1 %}
@@ -31,7 +31,7 @@ title: Home
           {% endfor %}
         </ul>
         </div>
-     {% endif %}
+//     {% endif %}
 
       {% comment %}
         <a href="{{ site.url }}">Next</a> 
