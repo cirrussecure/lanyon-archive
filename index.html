@@ -5,6 +5,8 @@ title: Home
 
 <div class="posts">
   {{ paginator.page }}
+  {{ post.url }}
+  {{ post.url | absolute_url }}
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
