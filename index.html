@@ -12,7 +12,8 @@ title: Home
         {{ post.title }}
     </h1>
     <span class="post-date">{{ post.date | date_to_string }}</span>
-      {% if post.title == About me %}
+      <a href="{{ post.date }}">post.date</a>
+      {% if post.date == "2021-01-29" %}
         {{ post.content }}
         {% break %}
      {% else %}
@@ -42,7 +43,9 @@ title: Home
 </div>
 
 {% comment %}      
+28 Mar 2021
     <!--       
+      <a href="{{ post.date }}">post.date</a>
       <a href="{{ post.url }}">post.url</a>
       <a href="{{ post.url | absolute_url }}">post.url | absolute_url</a> 
     -->
