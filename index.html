@@ -12,6 +12,7 @@ title: Home
         {{ post.title }}
     </h1>
     <span class="post-date">{{ post.date | date_to_string }}</span>
+      {% comment %}
       <a href="{{ post.date }}">post.date</a>
       <a href="{{ post.date | truncate: 10, "" }}">post.date</a>
       {% if (post.date | truncate: 10, "")  == "2021-01-29" %}
@@ -20,7 +21,8 @@ title: Home
      {% else %}
           {{ post.content }}    
      {% endif %}
-  
+     {% endcomment %}
+     {{ post.content }}    
   </div>
   {% endfor %}
 </div>
