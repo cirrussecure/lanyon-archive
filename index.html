@@ -8,13 +8,13 @@ title: Home
  
   {% for post in paginator.posts %}
   <div class="post">
-
-    {{ post.url }}
-    {{ post.url | absolute_url }}
- 
     <h1 class="post-title">
       <a href="{{ post.url | absolute_url }}">
         {{ post.title }}
+
+        {{ post.url }}
+        {{ post.url | absolute_url }}
+ 
       </a>
     </h1>
     <span class="post-date">{{ post.date | date_to_string }}</span>
