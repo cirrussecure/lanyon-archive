@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Links
+title: Interesting Links
 ---
 
 <p class="message">
