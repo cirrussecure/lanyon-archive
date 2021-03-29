@@ -6,7 +6,7 @@ title: Home
 <div class="posts">
   {{ paginator.page }}
  
-  {% for post in paginator.posts %}
+  {% for post in paginator.posts reversed %}
   <div class="post">
     <h1 class="post-title">
         {{ post.title }}
