@@ -2,7 +2,25 @@
 layout: default
 title: Home
 ---
+<div class="posts">
+  {% for post in posts %}  
+  <div class="post">
+    <h1 class="post-title">
+      {{ post.title }}
+    </h1>
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+      <a href="{{ post.date }}">post.date</a>
+  </div>     
+  {{ post.content }}  
+  {% endfor %}  
+</div>
 
+{% comment %}  
+  {%  %}  
+  {{  }}
+{% endcomment %}
+
+{% comment %}
 <div class="posts">
   {{ paginator.page }}
  
@@ -42,8 +60,8 @@ title: Home
   {% else %}
     <span class="pagination-item newer">Newer</span>
   {% endif %}
-
 </div>
+{% endcomment %}
 
 {% comment %}      
     {{ "Ground control to Major Tom." | truncate: 20, "" }}
